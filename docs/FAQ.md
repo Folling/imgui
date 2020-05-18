@@ -91,7 +91,7 @@ e.g. `if (ImGui::GetIO().WantCaptureMouse) { ... }`
 
 - When `io.WantCaptureMouse` is set, imgui wants to use your mouse state, and you may want to discard/hide the inputs from the rest of your application.
 - When `io.WantCaptureKeyboard` is set, imgui wants to use your keyboard state, and you may want to discard/hide the inputs from the rest of your application.
-- When `io.WantTextInput` is set to may want to notify your OS to popup an on-screen keyboard, if available (e.g. on a mobile phone, or console OS).
+- When `io.WantTextInput` is set you may want to notify your OS to popup an on-screen keyboard, if available (e.g. on a mobile phone, or console OS).
 
 **Note:** You should always pass your mouse/keyboard inputs to Dear ImGui, even when the io.WantCaptureXXX flag are set false.
  This is because imgui needs to detect that you clicked in the void to unfocus its own windows.
